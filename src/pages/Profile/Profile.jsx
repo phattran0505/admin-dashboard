@@ -13,7 +13,6 @@ import {
 import classNames from "classnames/bind";
 
 import { projectsData, socialLinks, skillsData } from "../../assets/data";
-import userImg from "../../assets/images/avatar.jpg";
 
 import styles from "./Profile.module.scss";
 const cx = classNames.bind(styles);
@@ -29,7 +28,7 @@ function Profile() {
       <div className={cx("profile-container")}>
         <div className={cx("profile-header")}>
           <div className={cx("profile-avatar")}>
-            <img src={userImg} alt="Profile Avatar" />
+            <img src={"https://res.cloudinary.com/djmeybzjk/image/upload/v1750653887/avatar_hpvpyl.jpg"} alt="Profile Avatar" />
           </div>
           <h1 className={cx("profile-name")}>Tran Xuan Phat</h1>
           <p className={cx("profile-title")}>

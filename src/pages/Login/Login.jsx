@@ -9,8 +9,6 @@ import axios from "axios";
 import { BASE_URL } from "../../config/utils";
 import { loginStart, loginSuccess, loginFailure } from "../../redux/authSlice";
 import { toastError } from "../../shared/Toastify";
-import logoImg from "../../assets/images/logo.svg";
-import googleImg from "../../assets/images/google.svg";
 import Loader from "../../shared/Loader";
 
 import styles from "./Login.module.scss";
@@ -90,7 +88,12 @@ function Login() {
         <div className={cx("login-form")}>
           <div className={cx("login-content")}>
             <Link to={"/"} className={cx("login-logo")}>
-              <img src={logoImg} alt="logo" />
+              <img
+                src={
+                  "https://res.cloudinary.com/djmeybzjk/image/upload/v1750653889/logo_vlxhld.svg"
+                }
+                alt="logo"
+              />
             </Link>
             <div className={cx("login-welcome")}>
               Welcome back <br /> Please login to your admin account
@@ -129,7 +132,12 @@ function Login() {
                   <Loader isloading={googleLoading} />
                 ) : (
                   <>
-                    <img src={googleImg} alt="google" />
+                    <img
+                      src={
+                        "https://res.cloudinary.com/djmeybzjk/image/upload/v1750653889/google_p4ircn.svg"
+                      }
+                      alt="google"
+                    />
                     Login with Google
                   </>
                 )}
@@ -144,7 +152,9 @@ function Login() {
                 <div className={cx("info-row")}>
                   <div className={cx("info-col")}>
                     <div className={cx("info-label")}>Email</div>
-                    <div className={cx("info-value")}>admin_example@gmail.com</div>
+                    <div className={cx("info-value")}>
+                      admin_example@gmail.com
+                    </div>
                   </div>
                   <div className={cx("info-col")}>
                     <div className={cx("info-label")}>Password</div>

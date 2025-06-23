@@ -5,7 +5,6 @@ import { HiMenuAlt3 } from "react-icons/hi";
 import classNames from "classnames/bind";
 import axios from "axios";
 
-import logo from "../../assets/images/logo.svg";
 import { sidebarData } from "../../assets/data/index";
 import { AuthContext } from "../../contexts/authContext";
 import { useHealthCheck } from "../../hooks/useHealthCheck";
@@ -67,7 +66,12 @@ function SideBar() {
         <div className={cx("sidebar-container", { mobile: isMobile })}>
           <div className={cx("sidebar-brand")}>
             <Link to={"/"} className={cx("logo")}>
-              <img src={logo} alt="logo"></img>
+              <img
+                src={
+                  "https://res.cloudinary.com/djmeybzjk/image/upload/v1750653889/logo_vlxhld.svg"
+                }
+                alt="logo"
+              ></img>
             </Link>
           </div>
           <div className={cx("sidebar-menu")}>

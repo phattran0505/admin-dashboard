@@ -8,16 +8,6 @@ import {
 } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 
-// country images
-import brazilImg from "../images/brazil.svg";
-import usImg from "../images/us.svg";
-import indiaImg from "../images/india.svg";
-import englandImg from "../images/england.svg";
-import turkeyImg from "../images/turkey.svg";
-import canadaImg from "../images/canada.svg";
-
-import editeShopImg from "../images/edite-shop_img.png";
-import movieWebsiteImg from "../images/movie-website_img.png";
 
 export const sidebarData = [
   {
@@ -39,22 +29,28 @@ export const sidebarData = [
 
 export const countries = [
   {
-    image: brazilImg,
+    image:
+      "https://res.cloudinary.com/djmeybzjk/image/upload/v1750653886/brazil_tezqqa.svg",
   },
   {
-    image: usImg,
+    image:
+      "https://res.cloudinary.com/djmeybzjk/image/upload/v1750653886/us_nqja56.svg",
   },
   {
-    image: indiaImg,
+    image:
+      "https://res.cloudinary.com/djmeybzjk/image/upload/v1750653888/india_ufk3jr.svg",
   },
   {
-    image: englandImg,
+    image:
+      "https://res.cloudinary.com/djmeybzjk/image/upload/v1750653887/england_ljcn3c.svg",
   },
   {
-    image: turkeyImg,
+    image:
+      "https://res.cloudinary.com/djmeybzjk/image/upload/v1750653886/turkey_qq8mcv.svg",
   },
   {
-    image: canadaImg,
+    image:
+      "https://res.cloudinary.com/djmeybzjk/image/upload/v1750653886/canada_lf2ifc.svg",
   },
 ];
 
@@ -134,7 +130,8 @@ export const projectsData = [
     title: "Edite shop",
     description:
       "A responsive and feature-rich online shopping platform that allows users to browse, filter, and search for products efficiently. Includes secure user authentication with Google login, shopping cart management, and a clean, intuitive user interface designed for a seamless shopping experience.",
-    image: editeShopImg,
+    image:
+      "https://res.cloudinary.com/djmeybzjk/image/upload/v1750653888/edite-shop_img_ettlrh.png",
     year: "Aug 2024 - Nov 2024",
     isFeatured: true,
     githubLink: "https://github.com/phattran0505/Edite-Shop_fe",
@@ -145,7 +142,7 @@ export const projectsData = [
       "Shopping cart management",
       "Wishlist or favorites management",
       "Customer reviews and rating",
-      "AI-powered Chatbox Integration"
+      "AI-powered Chatbox Integration",
     ],
     technologies: ["React", "Node.js", "Redux", "MongoDB", "JWT"],
   },
@@ -154,7 +151,8 @@ export const projectsData = [
     title: "Movie Website",
     description:
       "A responsive movie website with user login, movie search/filtering, and personal watchlist. Users can explore movies, save favorites, and manage their list. Admins can add/edit users data. Real-time data is fetched via public API.",
-    image: movieWebsiteImg,
+    image:
+      "https://res.cloudinary.com/djmeybzjk/image/upload/v1750653890/movie-website_img_oe8quy.png",
     year: "Jan 2025 - May 2025",
     isFeatured: false,
     githubLink: "https://github.com/phattran0505/movie-webstie_fe",
