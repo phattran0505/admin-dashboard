@@ -1,0 +1,68 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+
+  .page-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    background-color: white;
+    color: #4a5568;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover:not(:disabled) {
+      background-color: #f7fafc;
+      border-color: #cbd5e0;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .page-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+    height: 32px;
+    padding: 0 8px;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    background-color: white;
+    color: #4a5568;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: #f7fafc;
+      border-color: #cbd5e0;
+    }
+
+    &.active {
+      background-color: #4db3ff;
+      border-color: #4db3ff;
+      color: white;
+
+      &:hover {
+        background-color: #3da3ef;
+        border-color: #3da3ef;
+      }
+    }
+  }
+} 

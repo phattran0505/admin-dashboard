@@ -1,0 +1,107 @@
+.analytics-page {
+  width: 100%;
+  height: auto;
+  .overview-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    // gap: 24px;
+    margin: 0 -12px;
+    .overview-item {
+      width: 100%;
+      padding: 0 12px;
+      .overview-content {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 1.5rem;
+        margin-bottom: 24px;
+        border-radius: 3px;
+        background-color: #fff;
+        box-shadow: 0 3px 5px rgba(0, 10, 10, 0.05);
+        .overview-icon {
+          width: 60px;
+          height: 60px;
+          margin-right: 15px;
+          text-align: center;
+          border-radius: 50%;
+          i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            font-size: 1.8rem;
+            color: #fff;
+          }
+        }
+        .overview-des {
+          h3 {
+            font-size: 2rem;
+            margin: 0;
+            font-weight: 700;
+          }
+          p {
+            margin: 0;
+            font-size: 0.875rem;
+            line-height: 180%;
+          }
+        }
+      }
+    }
+  }
+  .chart-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+    .card {
+      width: 100%;
+      border: 0;
+      border-radius: 4px;
+      position: relative;
+      margin-bottom: 24px;
+      background: #fff;
+      box-shadow: 0 3px 5px rgba(0, 10, 10, 0.05);
+      .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 1rem 1.25rem 0;
+        h3 {
+          display: inline;
+          font-size: 1.2rem;
+          color: #13181e;
+          font-weight: 600;
+          line-height: 150%;
+          text-transform: capitalize;
+        }
+      }
+    }
+    .total-views_chart,
+    .new-user_chart,
+    .total-movies_chart {
+      flex: 0 0 auto;
+      width: 100%;
+      padding: 0 12px;
+    }
+  }
+}
+
+// Responsive mobile
+
+@media screen and (max-width: 768px) { 
+  .analytics-page {
+    .overview-container {
+      grid-template-columns: repeat(1, 1fr);
+      .overview-item {
+        .overview-content {
+          padding: 1rem;
+        }
+      }
+    }
+  }
+}
